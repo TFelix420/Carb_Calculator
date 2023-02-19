@@ -1,0 +1,164 @@
+*{
+    -webkit-user-select: none; user-select: none;
+}
+
+body{
+    margin:0; padding:0;
+    font-family: Sans-Serif; background-color: black;
+}
+
+header,footer{
+    margin:0; padding:0;
+    background-color: black; color:white;
+    text-align: center;
+}
+header{ height: 2rem; }
+footer{ 
+    height: 2rem;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position:fixed;
+    justify-content: space-between;
+    width:100%;
+
+ }
+
+header > h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+}
+h3 {
+    color: red;
+    font-size: 0.9rem;
+    text-align: center;
+}
+footer > p {
+    margin: 0;
+    padding: 0;
+    font-size: 0.6rem;
+    line-height: 0.9rem;
+}
+main{
+    margin: 0;
+    padding: 0.8rem;
+    height: 85vh;
+    background-color: white;
+    color: black;
+}
+
+.numpad{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 40vh;
+    border-style: solid;
+    border: 2px white;
+    background-color: white;
+    grid-column-gap: 0.1rem;
+    grid-row-gap: 0.1rem;
+    padding-bottom: 1rem;
+
+}
+.carbButton{
+    border-style: solid;
+    border: 0.2rem white;
+    padding:0.5rem ;
+    height: 25%;
+    width: 25%;
+    border-radius: 8px;
+    justify-content:center;
+    
+}
+.starry{
+    font-size:1.4rem;
+}
+button{
+    background-color: black;
+    color: orange;
+    border-style: solid;
+    border: 2px white;
+    border-radius: 4px;
+    justify-content: center;
+}
+
+section{
+    display: flex;
+    background-color: lightgray;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    border-style: solid;
+    border-bottom: 1px black;
+}
+
+button .tabs{
+    background-color: black;
+    color: orange;
+    border-style: solid;
+    border: 2px white;
+    border-radius: 4px;
+    height: 4vh;
+    justify-content:center;
+}
+
+#c {
+    background-color: lightcyan;
+    border: 2px black;
+    border-Style: solid;
+
+
+}
+#por {
+    background-color: white;
+    border: 2px black;
+    border-style: solid;
+}
+.show {
+    background-color: white;
+    border: 2px black;
+    border-style: solid;
+}
+
+.saveButton {
+    width: 100%;
+    height: 5vh;
+}
+.searchButton {
+    border-style: solid;
+    border-color: black;
+    background-color: lightblue;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1rem;
+}
+.searchSection {
+    border-style:none;
+    background-color: white;
+    justify-content:flex-start;
+}
+input {
+    width: 75%;
+
+}
+.resultButton{
+    grid-template-columns: 1fr;
+    height: 4vh;
+    border-style: solid;
+    border: 2px white;
+    border-radius: 4px;
+    background-color: black;
+    grid-column-gap: 0.1rem;
+    grid-row-gap: 0.1rem;
+    padding-bottom: 2rem;
+    justify-content: center;
+}
+#searchResults {
+    display: grid;
+    grid-template-columns: 1fr;
+    border-style: solid;
+    border: 2px white;
+    background-color: white;
+    grid-column-gap: 0.1rem;
+    grid-row-gap: 0.1rem;
+    padding-bottom: 1rem;
+}
