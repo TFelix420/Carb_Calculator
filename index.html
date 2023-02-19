@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyCarbCalculator</title>
+    <!--<link rel="stylesheet" href="normalize.css"> -->
+    <link rel="stylesheet" href="myapp.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!-- User scalable=0 prevents double tap but is accessibility problem -->
+    <link rel="apple-touch-icon" sizes="128x128" href="icon128.png">
+    <link rel="icon" sizes="192x192" href="icon192.png">
+</head>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<body>
+<header>
+    <h1>Carbohydrate Calculator</h1>
+</header>
+<main>
+    <h3><u>For class assessment only -- Not to be used for treatment advice</u></h3>
+    <div id="homeContent">
+        <section>
+            <p>Total carbs:</p>
+            <p id="show"></p>   
+        </section>
+        <section>
+            <div>
+                <p>Carbs/100g:</p>
+                <p id="c">0</p>
+            </div>
+            <div>
+                <p>Portion in g:</p>
+                <p id="por">0</p>
+            </div>
+        </section>
+        <div class="numpad">
+            <button id="1" class="pad">1</button>
+            <button id="2" class="pad">2</button>
+            <button id="3" class="pad">3</button>
+            <button id="4" class="pad">4</button>
+            <button id="5" class="pad">5</button>
+            <button id="6" class="pad">6</button>
+            <button id="7" class="pad">7</button>
+            <button id="8" class="pad">8</button>
+            <button id="9" class="pad">9</button>
+            <button id="dec" class="pad">.</button>
+            <button id="0" class="pad">0</button>        
+            <button id="bs" class="pad">⌫</button>
+            <button id="reset" class="pad">C</button>
+            <button id="resetAll" class="pad">CA</button>
+            <button id="eq" class="pad">=</button>       
+        </div>
+        <button id="save" class="saveButton">Save</button>
+    </div>
+    <div id="starredContent" class="starry">
+        <p>You have no favorited food items!</p>
+    </div>
+    <div id="searchContent">    
+            <p><h2>What are you searching for?</h2></p>
+            <section class="searchSection">
+            <button id="searching" class="searchButton">🔍</button>
+            <input type="text" id="searchInput"></input>
+            </section>
+        <div id="searchResults"></div>
+            
+
+    </div>
+    
+
+</main>   
+<footer>
+        <button class="tabs" id="home">🏠Home</button>
+        <button class="tabs" id="starred">⭐Favorites</button>
+        <button class="tabs" id="search">🔍Search</button>
+</footer>
+<script src="scripts.js"></script>
+</body >
+</html >
